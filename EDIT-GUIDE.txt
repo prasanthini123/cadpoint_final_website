@@ -1,0 +1,42 @@
+CADPOINT CLEAN WEBSITE - EASY EDIT GUIDE
+
+1. WEBSITE NAME
+Open index.html and about.html. Search: CADPOINT
+
+2. PHONE NUMBER
+Search: +91 00000 00000
+Change every occurrence to your real number.
+
+3. WHATSAPP NUMBER
+Open js/script.js. Search:
+const whatsappNumber = '910000000000';
+Replace with country code + number, without + or spaces.
+Also update the wa.me links in HTML.
+
+4. HERO IMAGES + CAPTIONS
+index.html -> search: class="hs"  (3 slides)
+Change the <img src="..."> (a link or a file inside images/) and the data-cap="..." caption text.
+Slide time: js/script.js -> HERO_DELAY = 6000 (milliseconds).
+Hero design CSS: css/site.css -> "HERO v3" (end of file).
+
+5. COURSE NAME / HOURS / IMAGE
+index.html -> COURSES section
+Each course is a normal <article class="cd"> block.
+Change the <img>, <h3>, hours and text directly.
+
+6. COLOURS / DESIGN
+css/site.css
+
+7. ANIMATIONS
+Do not delete class names such as rv, px, ttl, hs, car.
+They are used by script.js/CSS for the original effects.
+
+8. RUN
+Double-click index.html. No npm, React or Vite required.
+
+COURSE DETAILS PAGES (26 course pages)
+ - Trainer: search "EDIT TRAINER" in any course page. Change name, job title and photo.
+ - Student reviews: open js/reviews.js and follow the instructions at the top.
+   One file controls the reviews on every course page. Sample reviews are placeholders.
+ - Hero banner and animation styles: css/site.css -> "COURSE DETAILS v2".
+
